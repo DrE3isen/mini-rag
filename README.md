@@ -32,3 +32,10 @@ python -m pip install -r requirements.txt
 ## Running
 
 This repository currently contains the dependency setup but does not yet include an application entry point or API routes to run.
+
+## Installation
+
+### Install the required packages
+
+```bash
+pip install -r requirements.txt

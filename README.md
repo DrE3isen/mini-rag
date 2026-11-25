@@ -1,21 +1,34 @@
 # mini-rag
-This is a minimal implemntation of the Rag model for question answering.
+
+A small starter project for retrieval-augmented generation (RAG) question answering.
 
 ## Requirements
-python 3.8 or later
 
-#### Install Python using MiniConda
-💡
-1) Download and install MiniConda from [here](https://docs.anaconda.com/free/miniconda/#quick-command-line-install)
-2) Create a new environment using the following command:
-```bash
-conda create -n mini-rag python=3.13
- ```
+- Python 3.12 (the version used for local setup)
+- Conda, or another Python environment manager
 
-3) Activate the environment:
-```bash
-conda activate mini-rag```
-### (Optional) Setup you command line interface for better readability
+The project dependencies are pinned in [`requirements.txt`](requirements.txt):
+
+- **FastAPI** — web API framework
+- **Uvicorn** — ASGI server
+- **python-multipart** — multipart form-data parsing
+
+## Setup
+
+Create and activate a Conda environment, then install the project dependencies:
 
 ```bash
-export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "```
+conda create -n mini-rag python=3.12
+conda activate mini-rag
+python -m pip install -r requirements.txt
+```
+
+To install the dependencies in an already active Python environment:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Running
+
+This repository currently contains the dependency setup but does not yet include an application entry point or API routes to run.
